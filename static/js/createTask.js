@@ -67,7 +67,7 @@ if (IS_RUN_TRAIN) { // for debugging purposes
   timeline.push({
     type: "html-keyboard-response",
     stimulus: `<div class='center'><p>Data saved. Click <a href='${END_LINK}?id=${subjID}'>here</a> to proceed to the next task.</p></div>`,
-    choices: jsPsych.ALL_KEYS,
+    choices: jsPsych.NO_KEYS,
   });
 
   return timeline;
