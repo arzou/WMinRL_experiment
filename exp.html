@@ -38,7 +38,11 @@ if (isNaN(subjID)) { // if there is no value, and your counterbalancing depends 
   subjID = iseq;
 }
 
-let file_name = `WMinRL_${subjID}`; // create name for your data file
+const d = new Date();
+const date = `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+const startTime = `${d.getHours()}:${d.getMinutes()}`;
+
+let file_name = `WMinRL_${subjID}_${date}_${startTime}`; // create name for your data file
 
 // declare timeline
 let timeline = [];
